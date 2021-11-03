@@ -1,8 +1,0 @@
-{
-  "FunctionName": "login",
-  "Handler": "index.handler",
-  "MemorySize": 128,
-  "Role": "arn:aws:iam::564677439943:role/YOUR_LAMBDA_ROLE_NAME",
-  "Runtime": "nodejs10.x",
-  "Timeout": 3
-}

@@ -1,0 +1,14 @@
+{
+  "FunctionName": "login-notifier",
+  "Handler": "login",
+  "MemorySize": 128,
+  "Role": "arn:aws:iam::564677439943:role/login-notifier",
+  "Runtime": "go1.x",
+  "Timeout": 10,
+  "Environment": {
+    "Variables": {
+      "SLACK_URL": "{{ must_env `SLACK_URL` }}",
+      "SLACK_CHANNEL": "{{ must_env `SLACK_CHANNEL` }}"
+    }
+  }
+}
